@@ -159,22 +159,24 @@ ol {
   margin-left: 50px;
 }
 
+.header-contact-link {
+  color: var(--secondary-text-color);
+  display: inline;
+  align-items: center;
+  padding: 32px 0px 32px 0px;
+}
+
+.header-contact-link:hover,
+.header-contact-link:focus {
+  color: var(--accent-color);
+}
+
 .contact-icon {
   margin-right: 10px;
   fill: currentColor;
 }
 
-.header-contact-mail,
-.header-contact-mail:hover,
-.header-contact-mail:focus {
-  color: #757575;
-}
 
-.header-contact-tel,
-.header-contact-tel:hover,
-.header-contact-tel:focus {
-  color: var(--secondary-text-color);
-}
 
 
 /* -----------------------Основной контент------------------ */
