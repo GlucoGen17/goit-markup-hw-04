@@ -19,7 +19,7 @@
   </head>
   <body>
     <!-----------------------Header------------------------->
-    <header class="header">
+    <header class="header section">
       <div class="container header-flex">
         <a class="header-logo link" href="./index.html"
           >Web<span class="header-logo-studio">Studio</span></a
@@ -44,11 +44,16 @@
           <li class="header-contact-item">
             <a class="header-contact-mail link" href="info@example.com"
               >info@example.com</a
-            >
+            ><svg class="contact-icon" width="16" height="12">
+              <use href="./images/icons.svg#icon-envelope"></use>
+            </svg>
           </li>
           <li class="header-contact-item">
             <a class="header-contact-tel link" href="+380991111111"
-              >+38 099 111 11 11</a
+              ><svg class="contact-icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-mobile"></use>
+              </svg>
+              +38 099 111 11 11</a
             >
           </li>
         </ul>
@@ -56,7 +61,7 @@
     </header>
     <main>
       <!----------------------Filtr--------------------------->
-      <section class="projects">
+      <section class="projects section">
         <div class="container">
           <ul class="filters-list">
             <li class="filters-item">
@@ -70,12 +75,14 @@
             <li class="filters-item">
               <button class="filters-btn" type="button">Приложения</button>
             </li>
-            <li class="filters-item"><button class="filters-btn" type="button">Дизайн</button></li>
+            <li class="filters-item">
+              <button class="filters-btn" type="button">Дизайн</button>
+            </li>
             <li class="filters-item">
               <button class="filters-btn" type="button">Маркетинг</button>
             </li>
           </ul>
-        <!----------------------Projects--------------------------->
+          <!----------------------Projects--------------------------->
           <ul class="projects-list">
             <li class="projects-item">
               <img src="./images/p-1.jpg" alt="Технокряк" width="370" />
@@ -156,33 +163,73 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer section">
       <div class="container">
-        <a class="footer-logo link" href="index.html"
-          >Web<span class="footer-logo-studio">Studio</span></a
-        >
-        <address id="contact">
-          <ul class="footer-list">
-            <li class="footer-item">
-              <a
-                class="footer-contact-aderess link"
-                href="https://goo.gl/maps/8bVCaFrBpP2hShio7"
-                target="_blank"
-                >г. Киев, пр-т Леси Украинки, 26</a
-              >
-            </li>
-            <li class="footer-item">
-              <a class="footer-contact-mail link" href="mailto:info@example.com"
-                >info@example.com</a
-              >
-            </li>
-            <li class="footer-item">
-              <a class="footer-contact-tel link" href="tel:+380991111111"
-                >+38 099 111 11 11</a
-              >
-            </li>
-          </ul>
-        </address>
+        <div class="footer-bloks">
+          <div class="footer-address">
+            <a class="footer-logo link" href="index.html"
+              >Web<span class="footer-logo-studio">Studio</span></a
+            >
+            <address id="contact">
+              <ul class="footer-list">
+                <li class="footer-item">
+                  <a
+                    class="footer-contact-aderess link"
+                    href="https://goo.gl/maps/8bVCaFrBpP2hShio7"
+                    target="_blank"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="footer-item">
+                  <a
+                    class="footer-contact-mail link"
+                    href="mailto:info@example.com"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="footer-item">
+                  <a class="footer-contact-tel link" href="tel:+380991111111"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="footer-social">
+            <p class="footer-social-text">Присоединяйтесь</p>
+            <ul class="footer-social-list">
+              <li class="footer-social-item">
+                <a class="footer-social-link" href="">
+                  <svg class="footer-social-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="footer-social-link" href="">
+                  <svg class="footer-social-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="footer-social-link" href="">
+                  <svg class="footer-social-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="footer-social-link" href="">
+                  <svg class="footer-social-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </footer>
   </body>

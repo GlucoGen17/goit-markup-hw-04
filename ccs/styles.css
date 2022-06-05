@@ -140,7 +140,7 @@ ol {
   padding-bottom: 32px;
 }
 
-.current {
+.header-link.current {
   color: var(--accent-color);
 }
 
@@ -157,6 +157,11 @@ ol {
 
 .header-contact-item:not(:first-child) {
   margin-left: 50px;
+}
+
+.contact-icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 .header-contact-mail,
@@ -181,6 +186,15 @@ ol {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
+
+  background-image: linear-gradient(to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+    url(../images/Img-hero.jpg);
+  background-color: var(--cap-background-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
@@ -241,6 +255,22 @@ ol {
   margin-right: 30px;
 }
 
+.features-icon-fons {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+
+  background-color: var(--team-background-color);
+}
+
+.features-icon {
+  align-items: center;
+}
+
 .features-title {
   font-weight: 700;
   font-size: 14px;
@@ -298,6 +328,11 @@ ol {
 
 }
 
+.team-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0, 14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: var(--white-background-color);
+}
+
 .team-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -331,6 +366,96 @@ ol {
   padding: 30px 0px;
 }
 
+.team-socialnetwork-list {
+  display: flex;
+  padding: 0px 32px;
+  margin-top: 16px;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.team-socialnetwork-item {
+  width: 44px;
+  height: 44px;
+}
+
+.team-socialnetwork-link {
+  width: 44px;
+  height: 44px;
+  display: block;
+  border-radius: 50%;
+  color: #afb1b8;
+  background-color: var(--team-background-color);
+}
+
+.team-socialnetwork-link:hover,
+.team-socialnetwork-link:focus {
+  color: var(--white-text-color);
+  background-color: #2196f3;
+}
+
+.team-socialnetwork-icon {
+  margin-top: 12px;
+  margin-left: 12px;
+  fill: currentColor;
+}
+
+/* ----------------------Постоянные клиенты--------------------------- */
+
+.client-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.client-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+
+.client-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.client-item {
+  width: 170px;
+  height: 90px
+}
+
+.client-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.client-link {
+  width: 170px;
+  height: 90px;
+
+  display: block;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: #afb1b8;
+  background-color: #ffffff padding: 16px 32px;
+}
+
+.client-link:focus,
+.client-link:hover {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.client-icon {
+  fill: currentColor;
+}
+
 /* ----------------------Footer--------------------------- */
 
 .footer {
@@ -338,6 +463,12 @@ ol {
 
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer-bloks {
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-logo {
@@ -376,6 +507,58 @@ ol {
 .footer-contact-tel {
   color: rgba(255, 255, 255, 0.6);
 }
+
+.footer-social {
+  margin-left: 70px;
+  width: 205px;
+}
+
+.footer-social-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14px;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+  padding-top: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-social-list {
+  display: flex;
+  padding: 0;
+  margin-top: 0;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-social-item {
+  width: 44px;
+  height: 44px;
+}
+
+.footer-social-link {
+  width: 44px;
+  height: 44px;
+  display: block;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: #ffffff10;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+
+.footer-social-icon {
+  margin-top: 12px;
+  margin-left: 12px;
+  fill: currentColor;
+}
+
 
 /* ----------------------portfolio--------------------------- */
 
