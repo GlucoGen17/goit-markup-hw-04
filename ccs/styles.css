@@ -9,6 +9,7 @@
   --white-background-color: #ffffff;
   --cap-background-color: #2f303a;
   --team-background-color: #f5f4fa;
+  --accent-background-color: #2196f3;
 }
 
 /* база body */
@@ -34,6 +35,7 @@ p {
 /* налаштування кнопки */
 button {
   cursor: pointer;
+  border: transparent
 }
 
 /* налаштування картинок */
@@ -67,11 +69,8 @@ ol {
 }
 
 .section {
-  width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 /*-------------------Header-----------------*/
@@ -91,7 +90,7 @@ ol {
 }
 
 .header-logo {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -113,6 +112,7 @@ ol {
 
 .header-nav {
   display: flex;
+  align-items: center;
 }
 
 .header-list {
@@ -151,6 +151,7 @@ ol {
 
   display: flex;
   margin-left: auto;
+  align-items: center;
 
   /* outline: 2px solid red; */
 }
@@ -161,9 +162,9 @@ ol {
 
 .header-contact-link {
   color: var(--secondary-text-color);
-  display: inline;
+  display: flex;
   align-items: center;
-  padding: 32px 0px 32px 0px;
+  justify-items: center;
 }
 
 .header-contact-link:hover,
@@ -184,7 +185,7 @@ ol {
 /* ----------------------Hero--------------------------- */
 
 .hero {
-  background-color: var(--cap-background-color);
+  max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
@@ -242,7 +243,6 @@ ol {
 
 .features-section {
   padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .features-list {
@@ -292,6 +292,7 @@ ol {
 /* ----------------------Чем мы занимаемся--------------------------- */
 
 .work-section {
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -331,8 +332,10 @@ ol {
 }
 
 .team-item {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0, 14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: var(--white-background-color);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-item:not(:last-child) {
@@ -370,10 +373,8 @@ ol {
 
 .team-socialnetwork-list {
   display: flex;
-  padding: 0px 32px;
   margin-top: 16px;
-  list-style: none;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -382,13 +383,17 @@ ol {
   height: 44px;
 }
 
+.team-socialnetwork-item:not(:last-child) {
+  margin-right: 10px;
+}
+
 .team-socialnetwork-link {
   width: 44px;
   height: 44px;
   display: block;
   border-radius: 50%;
   color: #afb1b8;
-  background-color: var(--team-background-color);
+  
 }
 
 .team-socialnetwork-link:hover,
@@ -423,8 +428,7 @@ ol {
   display: flex;
   padding: 0;
   margin: 0;
-  list-style: none;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -444,8 +448,14 @@ ol {
   display: block;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  
   color: #afb1b8;
-  background-color: #ffffff padding: 16px 32px;
+  background-color: #ffffff;
+  padding: 16px 32px;
+  fill: currentColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .client-link:focus,
@@ -454,9 +464,9 @@ ol {
   border-color: var(--accent-color);
 }
 
-.client-icon {
+/* .client-icon {
   fill: currentColor;
-}
+} */
 
 /* ----------------------Footer--------------------------- */
 
@@ -468,9 +478,8 @@ ol {
 }
 
 .footer-bloks {
-  display: flex;
-  margin: 0;
-  padding: 0;
+  display:flex;
+  align-items: baseline
 }
 
 .footer-logo {
@@ -530,7 +539,6 @@ ol {
   display: flex;
   padding: 0;
   margin-top: 0;
-  list-style: none;
   justify-content: space-between;
   align-items: center;
 }
@@ -538,6 +546,11 @@ ol {
 .footer-social-item {
   width: 44px;
   height: 44px;
+  margin-right:10px;
+}
+
+.footer-social-item:last-child {
+  margin-right: 0;
 }
 
 .footer-social-link {
@@ -547,6 +560,7 @@ ol {
   border-radius: 50%;
   color: #ffffff;
   background-color: #ffffff10;
+  fill: currentColor;
 }
 
 .footer-social-link:hover,
@@ -579,19 +593,31 @@ ol {
   margin-bottom: 50px;
 }
 
-.filters-btn,
-.filters-btn:hover,
-.filters-btn:focus {
+.filters-btn {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  text-align: center;
   cursor: pointer;
+
   background: var(--team-background-color);
   border-radius: 4px;
   color: var(--primary-text-color);
-  border: none;
+  border-color: transparent;
+
   padding: 6px 22px;
+}
+
+.filters-btn:hover,
+.filters-btn:focus {
+  color: var(--white-text-color) ;
+  background-color:var(--accent-color) ;
+  border-color:var(--accent-background-color) ;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12); ;
+
 }
 
 .filters-item:nth-child(-n+4) {
@@ -623,6 +649,17 @@ ol {
   border: 1px solid #EEEEEE;
   border-top: transparent;
   padding: 20px 24px;
+}
+
+.projects-link {
+  display: block;
+}
+
+.projects-link:hover,
+.projects-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);;
 }
 
 .projects-title {
